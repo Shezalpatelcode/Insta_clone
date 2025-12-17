@@ -7,7 +7,7 @@ let mongoose= require('mongoose')
 let Upload =require('./Upload')
 // let Comment =require('./Coment')
 const Story = require("./story");
-mongoose.connect('mongodb+srv://sheezalp88_db_user:AP1Ab2NhEqD2TRdl@cluster0.bckeuhl.mongodb.net/insta').then(()=>{
+mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log("db.....");
     
 })
