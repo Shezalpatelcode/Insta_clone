@@ -23,10 +23,10 @@ const Profile = () => {
     const fetchData = async () => {
       try {
         const [meRes, postsRes] = await Promise.all([
-          axios.get("http://localhost:4000/me", {
+          axios.get("https://insta-clone-1-y67n.onrender.com/me", {
             headers: { Authorization: token },
           }),
-          axios.get("http://localhost:4000/my-posts", {
+          axios.get("https://insta-clone-1-y67n.onrender.com/my-posts", {
             headers: { Authorization: token },
           }),
         ]);

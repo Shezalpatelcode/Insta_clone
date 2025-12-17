@@ -60,7 +60,7 @@ const CreatePost = () => {
 
       // 3️⃣ Apne backend ko call karo
       const res = await axios.post(
-        "http://localhost:4000/upload",
+        "https://insta-clone-1-y67n.onrender.com/upload",
         { imgUrl },
         {
           headers: {

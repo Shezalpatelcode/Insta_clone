@@ -24,7 +24,7 @@ const SignUp = () => {
 
     try {
       // ✅ Backend ke route ke hisaab se URL change kiya
-      const res = await axios.post("http://localhost:4000/signUp", formData);
+      const res = await axios.post("https://insta-clone-1-y67n.onrender.com/signUp", formData);
 
       // Backend se aata hai: { msg: "Signup successful", user: newUser }
       alert(res.data.msg || "Registration successful!");

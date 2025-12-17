@@ -5,7 +5,7 @@ import axios from "axios";
 import Sidebar from "./SideBar";
 import { useNavigate } from "react-router-dom";
 
-const API = "http://localhost:4000";
+const API = "https://insta-clone-1-y67n.onrender.com";
 
 const MainPage = () => {
   const [posts, setPosts] = useState([]);

@@ -37,7 +37,7 @@ const Sidebar = () => {
       setSearchLoading(true);
       // backend expects POST /search?q=...
       const res = await axios.post(
-        `http://localhost:4000/search?q=${encodeURIComponent(text)}`
+        `https://insta-clone-1-y67n.onrender.com/search?q=${encodeURIComponent(text)}`
       );
 
       // your backend returns { msg: [...] }
@@ -66,7 +66,7 @@ const Sidebar = () => {
 
     try {
       const res = await axios.post(
-        `http://localhost:4000/follow/${targetUserId}`,
+        `https://insta-clone-1-y67n.onrender.com/follow/${targetUserId}`,
         {},
         {
           headers: {
